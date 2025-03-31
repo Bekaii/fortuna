@@ -1,6 +1,6 @@
 {
   "siteInfo": {
-    "name": "Fortuna Salong",
+    "name": "Fortuna Salong | Frisör & Barber på Tågaborg, Helsingborg",
     "description": "Professionella barberartjänster i hjärtat av Helsingborg",
     "longDescription": "Traditionella och moderna klippningar, skäggtrimning och stylingtjänster.",
     "logo": {
@@ -10,14 +10,14 @@
     "copyright": "2025 Fortuna Salong"
   },
   "seo": {
-    "title": "Fortuna Salong",
+    "title": "Fortuna Salong | Frisör & Barber på Tågaborg, Helsingborg",
     "description": "Professionella barberartjänster i hjärtat av Helsingborg. Traditionella och moderna klippningar, skäggtrimning och stylingtjänster.",
     "keywords": ["frisör", "barbershop", "herrklippning", "skäggtrimning", "herrsalong", "Helsingborg", "Tågaborg", "hårvård", "skägg", "hår", "hårvårdning", "hårvårdare", "hårvårdstjänst", "hårvårdstjänster", "hårvårdstjänst", "hårvårdstjänster", "hårvårdstjänst", "hårvårdstjänster","frisör Helsingborg", "barbershop Helsingborg", "herrklippning Helsingborg", "skäggtrimning Helsingborg", "herrfrisör Helsingborg", "rakning med kniv Helsingborg", "barberare Helsingborg", "fade klippning Helsingborg", "skäggvård Helsingborg", "klippa skägget Helsingborg", "klassisk rakning Helsingborg", "lyxig herrklippning Helsingborg", "frisör Tågaborg", "barbershop Tågaborg", "bästa barbershop i Helsingborg", "var kan man klippa skägget i Helsingborg", "herrfrisör som gör fade i Helsingborg", "frisör med rakning för män i Helsingborg"],
     "googleSiteVerification": "",
     "structuredData": {
       "@context": "https://schema.org",
       "@type": "HairSalon",
-      "name": "Fortuna Salong",
+      "name": "Fortuna Salong | Frisör & Barber på Tågaborg, Helsingborg",
       "url": "https://fortunasalong.se",
       "logo": "https://fortunasalong.se/logo.png",
       "image": "https://fortunasalong.se/logo.png",
@@ -44,6 +44,10 @@
           "opens": "11:00",
           "closes": "16:00"
         }
+      ],
+      "areaServed": [
+        "Tågaborg", 
+        "Helsingborg"
       ]
     }
   },
