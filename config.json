@@ -1,0 +1,137 @@
+{
+  "siteInfo": {
+    "name": "Fortuna Salong",
+    "description": "Professionella barberartjänster i hjärtat av Helsingborg",
+    "longDescription": "Traditionella och moderna klippningar, skäggtrimning och stylingtjänster.",
+    "logo": {
+      "light": "/logo.png",
+      "dark": "/logo-invert.png"
+    },
+    "copyright": "2025 Fortuna Salong"
+  },
+  "seo": {
+    "title": "Fortuna Salong",
+    "description": "Professionella barberartjänster i hjärtat av Helsingborg. Traditionella och moderna klippningar, skäggtrimning och stylingtjänster.",
+    "keywords": ["frisör", "barbershop", "herrklippning", "skäggtrimning", "herrsalong", "Helsingborg", "Tågaborg", "hårvård", "skägg", "hår", "hårvårdning", "hårvårdare", "hårvårdstjänst", "hårvårdstjänster", "hårvårdstjänst", "hårvårdstjänster", "hårvårdstjänst", "hårvårdstjänster","frisör Helsingborg", "barbershop Helsingborg", "herrklippning Helsingborg", "skäggtrimning Helsingborg", "herrfrisör Helsingborg", "rakning med kniv Helsingborg", "barberare Helsingborg", "fade klippning Helsingborg", "skäggvård Helsingborg", "klippa skägget Helsingborg", "klassisk rakning Helsingborg", "lyxig herrklippning Helsingborg", "frisör Tågaborg", "barbershop Tågaborg", "bästa barbershop i Helsingborg", "var kan man klippa skägget i Helsingborg", "herrfrisör som gör fade i Helsingborg", "frisör med rakning för män i Helsingborg"],
+    "googleSiteVerification": "",
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "HairSalon",
+      "name": "Fortuna Salong",
+      "url": "https://fortunasalong.se",
+      "logo": "https://fortunasalong.se/logo.png",
+      "image": "https://fortunasalong.se/logo.png",
+      "description": "Professionella barberartjänster i hjärtat av Helsingborg",
+      "telephone": "+46790762576",
+      "email": "info@fortunasalong.se",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Aschebergsgatan 8",
+        "addressLocality": "Helsingborg",
+        "postalCode": "254 38",
+        "addressCountry": "SE"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "10:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday"],
+          "opens": "11:00",
+          "closes": "16:00"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "phone": "079 076 25 76",
+    "phoneLink": "+46790762576",
+    "email": "info@fortunasalong.se",
+    "instagram": "@fortuna_salong",
+    "instagramLink": "https://instagram.com/direct/t/fortuna_salong",
+    "address": "Aschebergsgatan 8, 254 38 Helsingborg",
+    "mapLink": "https://maps.google.com/?q=Aschebergsgatan+8,+Helsingborg",
+    "openingHours": [
+      { "days": "Tis - Fre", "hours": "10 - 18" },
+      { "days": "Lör", "hours": "11 - 16" },
+      { "days": "Sön & Mån", "hours": "Stängt" }
+    ]
+  },
+  "about": {
+    "title": "Om Fortuna Salong",
+    "paragraphs": [
+      "Fortuna Salong är en modern och välrenommerad frisörsalong som specialiserar sig på professionell hårvård, klippning, skäggtrimning och rakning. Med gedigen erfarenhet och en stark passion för yrket håller vi oss ständigt uppdaterade med de senaste trenderna och teknikerna för att kunna erbjuda förstklassiga tjänster.",
+      "Vår salong är belägen på Tågaborg, ett av Helsingborgs mest exklusiva områden. Trots detta strävar vi efter att erbjuda högkvalitativa behandlingar till konkurrenskraftiga priser, så att alla män har möjlighet att se välvårdade och stilfulla ut."
+    ]
+  },
+  "services": [
+    {
+      "icon": "Scissors",
+      "name": "Klippning",
+      "items": [
+        { "name": "Herr Klippning", "price": "300 kr" },
+        { "name": "Herr + Skägg", "price": "Från 400 kr" },
+        { "name": "Senior", "price": "250 kr" },
+        { "name": "Ungdommar", "price": "200 kr" },
+        { "name": "Små Barn", "price": "150 kr" }
+      ]
+    },
+    {
+      "icon": "Beard",
+      "name": "Skägg & Rakning",
+      "items": [
+        { "name": "Trimma skägg", "price": "150 kr" },
+        { "name": "Trimma & forma skägg", "price": "250 kr" },
+        { "name": "Rakning deluxe", "price": "300 kr" }
+      ]
+    },
+    {
+      "icon": "Spray",
+      "name": "Andra Tjänster",
+      "items": [
+        { "name": "Styling", "price": "100 kr" },
+        { "name": "Färgning", "price": "Från 150 kr" },
+        { "name": "Huvudmassage", "price": "200 kr" },
+        { "name": "Trådning ansikte", "price": "300 kr" },
+        { "name": "Forma ögonbryn", "price": "200 kr" },
+        { "name": "Forma ögonbryn + Trådning ansikte", "price": "450 kr" }
+      ]
+    }
+  ],
+  "googleMerchant": {
+    "storeCode": "fortunasalong",
+    "storeName": "Fortuna Salong",
+    "storeDescription": "Professionella barberartjänster i hjärtat av Helsingborg",
+    "websiteUrl": "https://fortunasalong.se",
+    "googleProductCategory": "507",
+    "availability": "in_stock",
+    "condition": "new",
+    "brand": "Fortuna Salong",
+    "products": [
+      {
+        "id": "herrklippning",
+        "title": "Herr Klippning",
+        "description": "Professionell herrklippning utförd av erfarna barberare",
+        "price": {
+          "value": 300,
+          "currency": "SEK"
+        },
+        "imageLink": "https://fortunasalong.se/images/herrklippning.jpg"
+      },
+      {
+        "id": "herr-skagg",
+        "title": "Herr + Skägg",
+        "description": "Kombinerad herrklippning och skäggtrimning",
+        "price": {
+          "value": 400,
+          "currency": "SEK"
+        },
+        "imageLink": "https://fortunasalong.se/images/herr-skagg.jpg"
+      }
+    ]
+  }
+} 

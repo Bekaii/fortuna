@@ -10,10 +10,12 @@ import BounceArrow from "@/components/bounce-arrow"
 import { useTheme } from "next-themes"
 import { useEffect, useState } from "react"
 import { getImagePath } from '@/utils/image-path'
+import { getSiteInfo } from '@/utils/config'
 
 export default function Home() {
   const { theme } = useTheme()
   const [mounted, setMounted] = useState(false)
+  const siteInfo = getSiteInfo()
 
   useEffect(() => {
     setMounted(true)
@@ -32,8 +34,8 @@ export default function Home() {
           <div className="text-center">
             <h1 className="text-4xl font-bold mb-4 text-primary">Välkommen till</h1>
             <Image
-              src={theme === "dark" ? getImagePath("/logo-invert.png") : getImagePath("/logo.png")}
-              alt="Fortuna Salong Logo"
+              src={theme === "dark" ? siteInfo.logo.dark : siteInfo.logo.light}
+              alt={`${siteInfo.name} Logo`}
               width={500}
               height={500}
               className="mx-auto"
@@ -71,7 +73,7 @@ export default function Home() {
 
           <footer className="bg-muted py-8 text-center">
             <div className="container mx-auto px-4">
-              <p>&copy; 2025 Fortuna Salong</p>
+              <p>&copy; {siteInfo.copyright}</p>
             </div>
           </footer>
         </div>

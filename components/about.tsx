@@ -1,21 +1,23 @@
 "use client"
 
 import Image from "next/image"
+import { getAbout } from "@/utils/config"
 
 export function About() {
+  const aboutInfo = getAbout()
+  
   return (
     <div
       className="animate-in fade-in slide-in-from-bottom-4 duration-1000"
     >
       <div className="flex flex-col md:flex-row items-center gap-8">
         <div className="flex-1 max-w:md justify-center items-center">
-          <h2 className="text-2xl font-bold mb-4 text-primary">Om Fortuna Salong</h2>
-          <p className="mb-4 justify-center items-center ">
-            Fortuna Salong är en modern och välrenommerad frisörsalong som specialiserar sig på professionell hårvård, klippning, skäggtrimning och rakning. <br/> Med gedigen erfarenhet och en stark passion för yrket håller vi oss ständigt uppdaterade med de senaste trenderna och teknikerna för att kunna erbjuda förstklassiga tjänster.
-          </p>
-          <p>
-            Vår salong är belägen på Tågaborg, ett av Helsingborgs mest exklusiva områden. <br/>Trots detta strävar vi efter att erbjuda högkvalitativa behandlingar till konkurrenskraftiga priser, så att alla män har möjlighet att se välvårdade och stilfulla ut.
-          </p>
+          <h2 className="text-2xl font-bold mb-4 text-primary">{aboutInfo.title}</h2>
+          {aboutInfo.paragraphs.map((paragraph, index) => (
+            <p key={index} className={`${index !== aboutInfo.paragraphs.length - 1 ? 'mb-4' : ''} justify-center items-center`}>
+              {paragraph}
+            </p>
+          ))}
         </div>
       </div>
     </div>

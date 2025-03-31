@@ -1,8 +1,11 @@
 "use client"
 
 import { Instagram, Phone, Mail, MapPin, Clock } from "lucide-react"
+import { getContact } from "@/utils/config"
 
 export function ContactInfo() {
+  const contactInfo = getContact()
+  
   return (
     <div className="container mx-auto px-4 py-16">
       <div
@@ -24,10 +27,10 @@ export function ContactInfo() {
                 <div>
                   <p className="text-sm text-foreground font-medium mb-1">Telefon</p>
                   <a
-                    href="sms:+46790762576" // Updated link to open SMS
+                    href={`sms:${contactInfo.phoneLink}`}
                     className="text-lg text-primary transition-colors"
                   >
-                    079 076 25 76
+                    {contactInfo.phone}
                   </a>
                 </div>
               </div>
@@ -41,13 +44,13 @@ export function ContactInfo() {
                 <div>
                   <p className="text-sm text-foreground font-medium mb-1">Instagram</p>
                   <a
-  href="https://instagram.com/direct/t/fortuna_salong"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-lg text-primary transition-colors"
->
-  @fortuna_salong
-</a>
+                    href={contactInfo.instagramLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg text-primary transition-colors"
+                  >
+                    {contactInfo.instagram}
+                  </a>
                 </div>
               </div>
 
@@ -58,18 +61,18 @@ export function ContactInfo() {
                   <Mail className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-    <p className="text-sm text-foreground font-medium mb-1">E-post</p>
-    <a
-      href="mailto:info@fortunasalong.se"
-      className="text-lg text-primary transition-colors"
-    >
-      info@fortunasalong.se</a>
+                  <p className="text-sm text-foreground font-medium mb-1">E-post</p>
+                  <a
+                    href={`mailto:${contactInfo.email}`}
+                    className="text-lg text-primary transition-colors"
+                  >
+                    {contactInfo.email}
+                  </a>
                 </div>
               </div>
             </div>
 
             <div className="space-y-8">
-
               <div
                 className="flex items-center space-x-4 p-4 rounded-xl hover:bg-primary/5 transition-colors"
               >
@@ -78,9 +81,11 @@ export function ContactInfo() {
                 </div>
                 <div>
                   <p className="text-sm text-foreground font-medium mb-1">Öppettider</p>
-                  <p className="text-lg text-primary">Tis - Fre: 10 - 18</p>
-                  <p className="text-lg text-primary">Lör: 11 - 16</p>
-                  <p className="text-lg text-primary">Sön & Mån: Stängt</p>
+                  {contactInfo.openingHours.map((hours, index) => (
+                    <p key={index} className="text-lg text-primary">
+                      {hours.days}: {hours.hours}
+                    </p>
+                  ))}
                 </div>
               </div>
               <div
@@ -91,7 +96,14 @@ export function ContactInfo() {
                 </div>
                 <div>
                   <p className="text-sm text-foreground font-medium mb-1">Adress</p>
-                  <p className="text-lg text-primary">Aschebergsgatan 8, 254 38 Helsingborg</p>
+                  <a 
+                    href={contactInfo.mapLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg text-primary transition-colors"
+                  >
+                    {contactInfo.address}
+                  </a>
                 </div>
               </div>
             </div>

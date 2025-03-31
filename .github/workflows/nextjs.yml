@@ -47,8 +47,15 @@ jobs:
       - name: Generate image list
         run: node scripts/generate-image-list.js
 
+      - name: Generate Google Merchant feed
+        run: node scripts/generate-merchant-feed.js
+        continue-on-error: true
+
       - name: Build with Next.js
         run: npm run build
+        env:
+          # Only set the env var if the secret exists
+          NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ secrets.GOOGLE_SITE_VERIFICATION != '' && secrets.GOOGLE_SITE_VERIFICATION || '' }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

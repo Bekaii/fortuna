@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
+  <channel>
+    <title>Fortuna Salong</title>
+    <link>https://fortunasalong.se</link>
+    <description>Professionella barberartjänster i hjärtat av Helsingborg</description>
+    <item>
+      <g:id>herrklippning</g:id>
+      <g:title>Herr Klippning</g:title>
+      <g:description>Professionell herrklippning utförd av erfarna barberare</g:description>
+      <g:link>https://fortunasalong.se</g:link>
+      <g:image_link>https://fortunasalong.se/images/herrklippning.jpg</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>300 SEK</g:price>
+      <g:brand>Fortuna Salong</g:brand>
+      <g:google_product_category>507</g:google_product_category>
+      <g:condition>new</g:condition>
+    </item>
+    <item>
+      <g:id>herr-skagg</g:id>
+      <g:title>Herr + Skägg</g:title>
+      <g:description>Kombinerad herrklippning och skäggtrimning</g:description>
+      <g:link>https://fortunasalong.se</g:link>
+      <g:image_link>https://fortunasalong.se/images/herr-skagg.jpg</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>400 SEK</g:price>
+      <g:brand>Fortuna Salong</g:brand>
+      <g:google_product_category>507</g:google_product_category>
+      <g:condition>new</g:condition>
+    </item>
+  </channel>
+</rss>
