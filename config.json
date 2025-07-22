@@ -34,7 +34,7 @@
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+          "dayOfWeek": ["Monday "Tuesday", "Wednesday", "Thursday", "Friday"],
           "opens": "10:00",
           "closes": "18:00"
         },
@@ -60,9 +60,9 @@
     "address": "Aschebergsgatan 8, 254 38 Helsingborg",
     "mapLink": "https://maps.google.com/?q=Aschebergsgatan+8,+Helsingborg",
     "openingHours": [
-      { "days": "Tis - Fre", "hours": "10 - 18" },
+      { "days": "Mån "- Fre", "hours": "10 - 18" },
       { "days": "Lör", "hours": "11 - 16" },
-      { "days": "Sön & Mån", "hours": "Stängt" }
+      { "days": "Sön ", "hours": "Stängt" }
     ]
   },
   "about": {
@@ -100,7 +100,7 @@
         { "name": "Styling", "price": "100 kr" },
         { "name": "Färgning", "price": "Från 150 kr" },
         { "name": "Huvudmassage", "price": "100 kr" },
-        { "name": "Trådning ansikte", "price": "300 kr" },
+        { "name": "Trådning ansikte", "price": "250 kr" },
         { "name": "Forma ögonbryn", "price": "100 kr" },
         { "name": "Forma ögonbryn + Trådning ansikte", "price": "350 kr" }
       ]
