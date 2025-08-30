@@ -60,7 +60,7 @@
     "address": "Aschebergsgatan 8, 254 38 Helsingborg",
     "mapLink": "https://maps.google.com/?q=Aschebergsgatan+8,+Helsingborg",
     "openingHours": [
-      { "days": "Mån "- Fre", "hours": "10 - 18" },
+      { "days": "Mån - Fre", "hours": "10 - 18" },
       { "days": "Lör", "hours": "11 - 16" },
       { "days": "Sön ", "hours": "Stängt" }
     ]
