@@ -77,11 +77,11 @@
       "icon": "Scissors",
       "name": "Klippning",
       "items": [
-        { "name": "Herr Klippning", "price": "280 kr" },
-        { "name": "Herr + Skägg", "price": "Från 350 kr" },
-        { "name": "Senior", "price": "200 kr" },
-        { "name": "Ungdommar", "price": "200 kr" },
-        { "name": "Små Barn", "price": "150 kr" }
+        { "name": "Herr Klippning", "price": "300kr" },
+        { "name": "Herr + Skägg", "price": "Från 400 kr" },
+        { "name": "Senior", "price": "240 kr" },
+        { "name": "Ungdommar", "price": "270kr" },
+        { "name": "Små Barn", "price": "230kr" }
       ]
     },
     {
@@ -90,7 +90,7 @@
       "items": [
         { "name": "Trimma skägg", "price": "100 kr" },
         { "name": "Trimma & forma skägg", "price": "150 kr" },
-        { "name": "Rakning deluxe", "price": "200 kr" }
+        { "name": "Rakning deluxe", "price": "240 kr" }
       ]
     },
     {
@@ -102,7 +102,7 @@
         { "name": "Huvudmassage", "price": "100 kr" },
         { "name": "Trådning ansikte", "price": "250 kr" },
         { "name": "Forma ögonbryn", "price": "100 kr" },
-        { "name": "Forma ögonbryn + Trådning ansikte", "price": "350 kr" }
+        { "name": "Forma ögonbryn + Trådning ansikte", "price": Från } "350 kr" }
       ]
     }
   ],
