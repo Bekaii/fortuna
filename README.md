@@ -38,4 +38,4 @@ Output is written to `dist/` (includes `CNAME`, `.nojekyll`, and `merchant-feed.
 
 ## GitHub Pages
 
-Push to `main` runs [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml): Bun build → upload `dist` → deploy. Optional secret `GOOGLE_SITE_VERIFICATION` is inlined as site verification.
+PRs run a Bun build check (no deploy). Push to `main` builds and deploys via [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). Optional secret `GOOGLE_SITE_VERIFICATION` is inlined as site verification.
