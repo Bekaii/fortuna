@@ -11,21 +11,13 @@ const distDir = join(root, "dist");
 const publicDir = join(root, "public");
 const isDev = process.argv.includes("--dev");
 
-async function copyStaticExtras() {
+async function copyPublicAssets() {
   await mkdir(distDir, { recursive: true });
+
+  // Stable public URLs (merchant feed, JSON-LD, bookmarks) expect unhashed paths
+  // like /logo.png — copy public/ into dist after Bun hashes HTML-referenced assets.
+  await cp(publicDir, distDir, { recursive: true });
   await Bun.write(join(distDir, ".nojekyll"), "");
-
-  const cnameSrc = join(publicDir, "CNAME");
-  if (await Bun.file(cnameSrc).exists()) {
-    await cp(cnameSrc, join(distDir, "CNAME"));
-  } else {
-    await Bun.write(join(distDir, "CNAME"), "fortunasalong.se\n");
-  }
-
-  const feedSrc = join(publicDir, "merchant-feed.xml");
-  if (await Bun.file(feedSrc).exists()) {
-    await cp(feedSrc, join(distDir, "merchant-feed.xml"));
-  }
 }
 
 async function main() {
@@ -63,7 +55,7 @@ async function main() {
     process.exit(1);
   }
 
-  await copyStaticExtras();
+  await copyPublicAssets();
   console.log(`Build complete → ${distDir}`);
 }
 
