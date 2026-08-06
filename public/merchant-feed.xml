@@ -5,27 +5,157 @@
     <link>https://fortunasalong.se</link>
     <description>Professionella barberartjänster i hjärtat av Helsingborg</description>
     <item>
-      <g:id>herrklippning</g:id>
+      <g:id>herr-klippning</g:id>
       <g:title>Herr Klippning</g:title>
-      <g:description>Professionell herrklippning utförd av erfarna barberare</g:description>
-      <g:link>https://fortunasalong.se</g:link>
-      <g:image_link>https://fortunasalong.se/images/herrklippning.jpg</g:image_link>
+      <g:description>Herr Klippning hos Fortuna Salong. Kategori: Klippning.</g:description>
+      <g:link>https://fortunasalong.se/#priser</g:link>
+      <g:image_link>https://fortunasalong.se/logo.png</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:price>300 SEK</g:price>
       <g:brand>Fortuna Salong</g:brand>
-      <g:google_product_category>507</g:google_product_category>
       <g:condition>new</g:condition>
     </item>
     <item>
       <g:id>herr-skagg</g:id>
       <g:title>Herr + Skägg</g:title>
-      <g:description>Kombinerad herrklippning och skäggtrimning</g:description>
-      <g:link>https://fortunasalong.se</g:link>
-      <g:image_link>https://fortunasalong.se/images/herr-skagg.jpg</g:image_link>
+      <g:description>Herr + Skägg hos Fortuna Salong. Kategori: Klippning.</g:description>
+      <g:link>https://fortunasalong.se/#priser</g:link>
+      <g:image_link>https://fortunasalong.se/logo.png</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:price>400 SEK</g:price>
       <g:brand>Fortuna Salong</g:brand>
-      <g:google_product_category>507</g:google_product_category>
+      <g:condition>new</g:condition>
+    </item>
+    <item>
+      <g:id>senior</g:id>
+      <g:title>Senior</g:title>
+      <g:description>Senior hos Fortuna Salong. Kategori: Klippning.</g:description>
+      <g:link>https://fortunasalong.se/#priser</g:link>
+      <g:image_link>https://fortunasalong.se/logo.png</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>270 SEK</g:price>
+      <g:brand>Fortuna Salong</g:brand>
+      <g:condition>new</g:condition>
+    </item>
+    <item>
+      <g:id>ungdommar</g:id>
+      <g:title>Ungdommar</g:title>
+      <g:description>Ungdommar hos Fortuna Salong. Kategori: Klippning.</g:description>
+      <g:link>https://fortunasalong.se/#priser</g:link>
+      <g:image_link>https://fortunasalong.se/logo.png</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>270 SEK</g:price>
+      <g:brand>Fortuna Salong</g:brand>
+      <g:condition>new</g:condition>
+    </item>
+    <item>
+      <g:id>sma-barn</g:id>
+      <g:title>Små Barn</g:title>
+      <g:description>Små Barn hos Fortuna Salong. Kategori: Klippning.</g:description>
+      <g:link>https://fortunasalong.se/#priser</g:link>
+      <g:image_link>https://fortunasalong.se/logo.png</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>230 SEK</g:price>
+      <g:brand>Fortuna Salong</g:brand>
+      <g:condition>new</g:condition>
+    </item>
+    <item>
+      <g:id>trimma-skagg</g:id>
+      <g:title>Trimma skägg</g:title>
+      <g:description>Trimma skägg hos Fortuna Salong. Kategori: Skägg &amp; Rakning.</g:description>
+      <g:link>https://fortunasalong.se/#priser</g:link>
+      <g:image_link>https://fortunasalong.se/logo.png</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>100 SEK</g:price>
+      <g:brand>Fortuna Salong</g:brand>
+      <g:condition>new</g:condition>
+    </item>
+    <item>
+      <g:id>trimma-forma-skagg</g:id>
+      <g:title>Trimma &amp; forma skägg</g:title>
+      <g:description>Trimma &amp; forma skägg hos Fortuna Salong. Kategori: Skägg &amp; Rakning.</g:description>
+      <g:link>https://fortunasalong.se/#priser</g:link>
+      <g:image_link>https://fortunasalong.se/logo.png</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>150 SEK</g:price>
+      <g:brand>Fortuna Salong</g:brand>
+      <g:condition>new</g:condition>
+    </item>
+    <item>
+      <g:id>rakning-deluxe</g:id>
+      <g:title>Rakning deluxe</g:title>
+      <g:description>Rakning deluxe hos Fortuna Salong. Kategori: Skägg &amp; Rakning.</g:description>
+      <g:link>https://fortunasalong.se/#priser</g:link>
+      <g:image_link>https://fortunasalong.se/logo.png</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>240 SEK</g:price>
+      <g:brand>Fortuna Salong</g:brand>
+      <g:condition>new</g:condition>
+    </item>
+    <item>
+      <g:id>styling</g:id>
+      <g:title>Styling</g:title>
+      <g:description>Styling hos Fortuna Salong. Kategori: Andra Tjänster.</g:description>
+      <g:link>https://fortunasalong.se/#priser</g:link>
+      <g:image_link>https://fortunasalong.se/logo.png</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>100 SEK</g:price>
+      <g:brand>Fortuna Salong</g:brand>
+      <g:condition>new</g:condition>
+    </item>
+    <item>
+      <g:id>fargning</g:id>
+      <g:title>Färgning</g:title>
+      <g:description>Färgning hos Fortuna Salong. Kategori: Andra Tjänster.</g:description>
+      <g:link>https://fortunasalong.se/#priser</g:link>
+      <g:image_link>https://fortunasalong.se/logo.png</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>150 SEK</g:price>
+      <g:brand>Fortuna Salong</g:brand>
+      <g:condition>new</g:condition>
+    </item>
+    <item>
+      <g:id>huvudmassage</g:id>
+      <g:title>Huvudmassage</g:title>
+      <g:description>Huvudmassage hos Fortuna Salong. Kategori: Andra Tjänster.</g:description>
+      <g:link>https://fortunasalong.se/#priser</g:link>
+      <g:image_link>https://fortunasalong.se/logo.png</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>100 SEK</g:price>
+      <g:brand>Fortuna Salong</g:brand>
+      <g:condition>new</g:condition>
+    </item>
+    <item>
+      <g:id>tradning-ansikte</g:id>
+      <g:title>Trådning ansikte</g:title>
+      <g:description>Trådning ansikte hos Fortuna Salong. Kategori: Andra Tjänster.</g:description>
+      <g:link>https://fortunasalong.se/#priser</g:link>
+      <g:image_link>https://fortunasalong.se/logo.png</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>250 SEK</g:price>
+      <g:brand>Fortuna Salong</g:brand>
+      <g:condition>new</g:condition>
+    </item>
+    <item>
+      <g:id>forma-ogonbryn</g:id>
+      <g:title>Forma ögonbryn</g:title>
+      <g:description>Forma ögonbryn hos Fortuna Salong. Kategori: Andra Tjänster.</g:description>
+      <g:link>https://fortunasalong.se/#priser</g:link>
+      <g:image_link>https://fortunasalong.se/logo.png</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>100 SEK</g:price>
+      <g:brand>Fortuna Salong</g:brand>
+      <g:condition>new</g:condition>
+    </item>
+    <item>
+      <g:id>forma-ogonbryn-tradning-ansikte</g:id>
+      <g:title>Forma ögonbryn + Trådning ansikte</g:title>
+      <g:description>Forma ögonbryn + Trådning ansikte hos Fortuna Salong. Kategori: Andra Tjänster.</g:description>
+      <g:link>https://fortunasalong.se/#priser</g:link>
+      <g:image_link>https://fortunasalong.se/logo.png</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>350 SEK</g:price>
+      <g:brand>Fortuna Salong</g:brand>
       <g:condition>new</g:condition>
     </item>
   </channel>

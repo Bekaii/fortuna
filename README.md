@@ -1,39 +1,41 @@
 # Fortuna Salong Website
 
-A static single-page website for Fortuna Salong with scroll animations, a modern image carousel, services & pricing information, and a contact form.
+Static marketing site for Fortuna Salong (fortunasalong.se), built with Bun and prop-for-that, deployed to GitHub Pages.
 
-## Features
+## Stack
 
-- Responsive design
-- Scroll animations with active section tracking
-- Modern touch-friendly image carousel
-- Services & pricing section
-- Contact form
+- **Bun** — install, HTML bundler, and static build
+- **prop-for-that** — viewport/visibility as CSS custom properties
+- **Tailwind CSS v4** via `bun-plugin-tailwind`
+- Content driven by [`config.json`](config.json)
 
-## Adding or Updating Images
-
-To add or update the gallery images:
-
-1. Navigate to the `public/imgs` folder in your repository
-2. Upload your image files (JPG, JPEG, PNG, WebP, or GIF)
-3. The website will automatically display these images in the gallery
-
-## Deployment to GitHub Pages
-
-1. Push your code to a GitHub repository
-2. Enable GitHub Pages in your repository settings
-3. Set the source to the branch you want to deploy (usually `main` or `gh-pages`)
-4. Your site will be deployed to `https://username.github.io/repo-name`
-
-## Local Development
+## Local development
 
 ```bash
-# Install dependencies
-npm install
+bun install
+bun run scripts/build.ts --dev   # generate src/index.html from config
+bun ./src/index.html             # Bun HTML dev server
+```
 
-# Run development server
-npm run dev
+Or:
 
-# Build for production
-npm run build
+```bash
+bun run dev
+```
 
+## Production build
+
+```bash
+bun run build
+```
+
+Output is written to `dist/` (includes `CNAME`, `.nojekyll`, and `merchant-feed.xml`).
+
+## Content
+
+- Edit site copy, SEO, services, and contact in `config.json`
+- Drop gallery images in `public/imgs/` — they are picked up on the next build
+
+## GitHub Pages
+
+Push to `main` runs [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml): Bun build → upload `dist` → deploy. Optional secret `GOOGLE_SITE_VERIFICATION` is inlined as site verification.

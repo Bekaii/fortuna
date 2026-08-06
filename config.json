@@ -7,7 +7,7 @@
       "light": "/logo.png",
       "dark": "/logo-invert.png"
     },
-    "copyright": "2025 Fortuna Salong"
+    "copyright": "2026 Fortuna Salong"
   },
   "seo": {
     "title": "Fortuna Salong | Frisör & Barber på Tågaborg, Helsingborg",
@@ -69,7 +69,7 @@
     "title": "Om Fortuna Salong",
     "paragraphs": [
       "Fortuna Salong är en modern och välrenommerad frisörsalong som specialiserar sig på professionell hårvård, klippning, skäggtrimning och rakning. Med gedigen erfarenhet och en stark passion för yrket håller vi oss ständigt uppdaterade med de senaste trenderna och teknikerna för att kunna erbjuda förstklassiga tjänster.",
-      "Vår salong är belägen på Tågaborg, ett av Helsingborgs mest exklusiva områden. Trots detta strävar vi efter att erbjuda högkvalitativa behandlingar till konkurrenskraftiga priser, så att alla män har möjlighet att se välvårdade och stilfulla ut."
+      "Salongen är belägen på Tågaborg, ett av Helsingborgs mest exklusiva områden. Trots detta strävar vi efter att erbjuda högkvalitativa behandlingar till låga priser, så att alla män har möjlighet att se välvårdade och stilfulla ut."
     ]
   },
   "services": [
@@ -111,31 +111,8 @@
     "storeName": "Fortuna Salong",
     "storeDescription": "Professionella barberartjänster i hjärtat av Helsingborg",
     "websiteUrl": "https://fortunasalong.se",
-    "googleProductCategory": "507",
     "availability": "in_stock",
     "condition": "new",
-    "brand": "Fortuna Salong",
-    "products": [
-      {
-        "id": "herrklippning",
-        "title": "Herr Klippning",
-        "description": "Professionell herrklippning utförd av erfarna barberare",
-        "price": {
-          "value": 300,
-          "currency": "SEK"
-        },
-        "imageLink": "https://fortunasalong.se/images/herrklippning.jpg"
-      },
-      {
-        "id": "herr-skagg",
-        "title": "Herr + Skägg",
-        "description": "Kombinerad herrklippning och skäggtrimning",
-        "price": {
-          "value": 400,
-          "currency": "SEK"
-        },
-        "imageLink": "https://fortunasalong.se/images/herr-skagg.jpg"
-      }
-    ]
+    "brand": "Fortuna Salong"
   }
 } 

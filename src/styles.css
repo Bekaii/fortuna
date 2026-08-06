@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --font-display: var(--font-playfair);
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+}
+
+@layer base {
+  :root {
+    --font-playfair: "Playfair Display", Georgia, serif;
+    --background: hsl(240 0% 90%);
+    --foreground: hsl(37.1 57.3% 42%);
+    --card: hsl(240 0% 90%);
+    --card-foreground: hsl(37.1 57.3% 42%);
+    --popover: hsl(240 0% 90%);
+    --popover-foreground: hsl(37.1 57.3% 42%);
+    --primary: hsl(338.2 0% 10%);
+    --primary-foreground: hsl(340 0% 90%);
+    --secondary: hsl(270 0% 90%);
+    --secondary-foreground: hsl(37.1 57.3% 72%);
+    --muted: hsl(270 0% 82%);
+    --muted-foreground: hsl(37.1 57.3% 72%);
+    --accent: hsl(270 0% 82%);
+    --accent-foreground: hsl(37.1 57.3% 62%);
+    --destructive: hsl(0 90% 28%);
+    --destructive-foreground: hsl(37.1 57.3% 42%);
+    --border: hsl(37.1 57.3% 72%);
+    --input: hsl(37.1 57.3% 72%);
+    --ring: hsl(338.2 0% 10%);
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: hsl(240 10% 3.9%);
+    --foreground: hsl(37.1 67.3% 58%);
+    --card: hsl(240 10% 3.9%);
+    --card-foreground: hsl(37.1 67.3% 58%);
+    --popover: hsl(240 10% 3.9%);
+    --popover-foreground: hsl(37.1 67.3% 58%);
+    --primary: hsl(338.2 0% 100%);
+    --primary-foreground: hsl(340 0% 8.6%);
+    --secondary: hsl(270 4.3% 9%);
+    --secondary-foreground: hsl(37.1 67.3% 28%);
+    --muted: hsl(270 2.2% 18%);
+    --muted-foreground: hsl(37.1 67.3% 28%);
+    --accent: hsl(270 2.2% 18%);
+    --accent-foreground: hsl(37.1 67.3% 38%);
+    --destructive: hsl(0 100% 71.8%);
+    --destructive-foreground: hsl(37.1 67.3% 58%);
+    --border: hsl(37.1 67.3% 28%);
+    --input: hsl(37.1 67.3% 28%);
+    --ring: hsl(338.2 0% 100%);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-playfair);
+  }
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* prop-for-that: reveal sections once they've entered the viewport.
+   Safety animation unhides content if the library never attaches. */
+.reveal {
+  opacity: 0;
+  transform: translateY(1rem);
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
+  animation: reveal-safety 0s 2s forwards;
+}
+
+@keyframes reveal-safety {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@container style(--const-has-entered: 1) {
+  .reveal {
+    opacity: 1;
+    transform: translateY(0);
+    animation: none;
+  }
+}
+
+.logo-light {
+  display: block;
+}
+
+.logo-dark {
+  display: none;
+}
+
+.dark .logo-light {
+  display: none;
+}
+
+.dark .logo-dark {
+  display: block;
+}
+
+.nav-link.is-active {
+  @apply text-foreground font-bold;
+}
+
+.gallery-dot.is-active {
+  @apply bg-primary w-5;
+}

@@ -1,39 +1,21 @@
 {
   "name": "fortuna-salong",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev --turbopack",
-    "prebuild": "node scripts/generate-image-list.js && node scripts/generate-merchant-feed.js",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "generate-merchant-feed": "node scripts/generate-merchant-feed.js",
-    "knip": "knip"
+    "dev": "bun run scripts/build.ts --dev && bun ./src/index.html",
+    "build": "bun run scripts/build.ts",
+    "preview": "bunx serve dist",
+    "generate-merchant-feed": "bun run scripts/generate-merchant-feed.ts"
   },
   "dependencies": {
-    "clsx": "^2.1.1",
-    "lucide-react": "^0.454.0",
-    "next": "^15.2.1",
-    "next-themes": "^0.4.4",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "react-icons": "^5.5.0",
-    "react-scroll": "^1.9.3",
-    "tailwind-merge": "^3.0.2"
+    "prop-for-that": "^0.7.12"
   },
   "devDependencies": {
-    "@types/node": "^22.13.14",
-    "@types/react": "19.0.10",
-    "@types/react-dom": "19.0.4",
-    "@types/react-scroll": "^1.8.10",
-    "knip": "^5.46.3",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.17",
+    "@types/bun": "latest",
+    "bun-plugin-tailwind": "^0.1.2",
+    "tailwindcss": "^4.3.3",
     "typescript": "^5.8.2"
-  },
-  "overrides": {
-    "@types/react": "19.0.10",
-    "@types/react-dom": "19.0.4"
   }
 }

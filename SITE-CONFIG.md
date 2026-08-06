@@ -103,27 +103,13 @@ This section contains service categories and pricing information.
   "storeName": "Fortuna Salong",
   "storeDescription": "Professionella barberartjänster i hjärtat av Helsingborg",
   "websiteUrl": "https://fortunasalong.se",
-  "googleProductCategory": "507",
   "availability": "in_stock",
   "condition": "new",
-  "brand": "Fortuna Salong",
-  "products": [
-    {
-      "id": "herrklippning",
-      "title": "Herr Klippning",
-      "description": "Professionell herrklippning utförd av erfarna barberare",
-      "price": {
-        "value": 300,
-        "currency": "SEK"
-      },
-      "imageLink": "https://fortunasalong.se/images/herrklippning.jpg"
-    },
-    ...
-  ]
+  "brand": "Fortuna Salong"
 }
 ```
 
-This section contains information for Google Merchant Center product feed.
+Store-level feed settings for a service business (no product category). Service items are generated automatically from `services` on every build (prices like `"300kr"` / `"Från 400kr"` are parsed as SEK).
 
 ## Sensitive Data
 
